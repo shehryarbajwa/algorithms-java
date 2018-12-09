@@ -1,0 +1,47 @@
+public class Main {
+
+    public static void main (String [] args){
+
+    }
+
+    public static void replaceSpaces(char [] str , int length){
+
+        int countSpaces = 0;
+
+        for (int i = 0 ; i < length ; i++){
+            if (str[i] == ' '){
+                countSpaces++
+            }
+
+            int index = length + countSpaces * 2;
+
+            for (int i = length - 1; i >= 0 ; i--){
+
+                if (str[i] == ' '){
+                    str[index - 1] = '0';
+                    str[index - 2] = '2';
+                    str[index - 3] = '%';
+                    index = index - 3
+                } else {
+                    str[index - 1] = str[i];
+                    index--
+                }
+
+            }
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+}

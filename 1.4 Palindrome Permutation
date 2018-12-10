@@ -1,0 +1,20 @@
+public class Main {
+
+   public static boolean (String s){
+
+       int[] mapArray = new int[128];
+
+       for (int i = 0; i < s.length(); i++){
+           mapArray[s.charAt(i)] = mapArray[s.charAt(i)] + 1;
+       }
+
+       int count = 0;
+
+       for (int key = 0; key < mapArray.length() && count <= 1; key++){
+           count = count + (mapArray[key] % 2);
+       }
+
+       return count <= 1;
+   }
+
+}

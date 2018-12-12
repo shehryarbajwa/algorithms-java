@@ -1,0 +1,20 @@
+public class main {
+
+    public static StringCompression(String s1){
+
+        StringBuilder compression = new StringBuilder();
+
+        int countConsecutive = 0;
+
+        for (int i = 0; i < s1.length(); i++){
+            countConsecutive++;
+
+            if (i + 1 >= s1.length() || s1.charAt(i) == s1.charAt(i+1)){
+                compression.append(s1.charAt(i));
+                compression.append(countConsecutive);
+                countConsecutive = 0;
+            }
+        }
+        return compression.length() < s1.length() ? compression.toString() : s1;
+    }
+}

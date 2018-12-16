@@ -1,0 +1,39 @@
+public class main {
+
+    void setZeroes(int[][] matrix){
+        boolean row = new boolean[matrix.length];
+        boolean column = new boolean[matrix[0].length];
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix.length; j++) {
+                if (matrix[i][j] == 0) {
+                    row[i] = true;
+                    column[i] = true;
+                }
+            }
+        }
+
+        for (int i = 0 ; i < row.length; i++){
+            if (row[i]) {
+                nullifyRow(matrix, row);
+            }
+        }
+
+        nullifyRow(int[][] matrix, int row){
+            for (i = 0; i < matrix[0].length; i++){
+                matrix[row][i] = 0;
+            }
+        }
+
+        for (int = 0; i < column.length; i++){
+            if (column[i]){
+                nullifyColumn(matrix, column);
+            }
+        }
+
+        nullifyColumn(int[][] matrix, int row){
+            for (int i = 0 ; i < matrix.length; i++){
+                matrix[column][i] = 0;
+            }
+        }
+}

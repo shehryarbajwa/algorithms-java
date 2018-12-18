@@ -1,0 +1,10 @@
+public class main {
+
+    boolean isRotate(String s1, String s2){
+        
+    }
+
+
+
+
+}

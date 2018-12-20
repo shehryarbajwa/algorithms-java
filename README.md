@@ -6,7 +6,8 @@ Java 8.0
 IntelliJ IDE
 
 ## Topics:
-<br>Arrays and Strings </br>
+Arrays and Strings <br>
+Linked Lists <br>
 
 
 

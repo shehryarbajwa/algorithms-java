@@ -1,5 +1,5 @@
 # Algorithms and Data-Structures
-Algorithmic implementation in java of Cracking the coding Interview
+Algorithms and Datastructure implementations in java of Cracking the coding Interview(6th edition)
 
 ## Language, IDE:
 Java 8.0

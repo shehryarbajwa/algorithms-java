@@ -26,10 +26,7 @@ public class Main {
                     str[index - 1] = str[i];
                     index--
                 }
-
             }
         }
-
     }
-
 }
